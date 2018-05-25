@@ -68,10 +68,6 @@ RCT_EXPORT_METHOD(pause) {
     if(_player) [_player pause];
 }
 
-RCT_EXPORT_METHOD(stop) {
-    if(_player) [_player stop];
-}
-
 RCT_EXPORT_METHOD(seekToTime: (double)time) {
    if(_player) [_player setCurrentTime:time];
 }
